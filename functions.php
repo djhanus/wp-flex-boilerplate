@@ -11,9 +11,9 @@ function enqueue_parent_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
 
 
-require_once(THEME_PATH . '/lib/acf.php');
+// require_once(THEME_PATH . '/lib/acf.php');
 require_once(THEME_PATH . '/lib/cpt.php');
-require_once(THEME_PATH . '/lib/comments.php');
+// require_once(THEME_PATH . '/lib/comments.php');
 require_once(THEME_PATH . '/lib/theme.php');
 
 

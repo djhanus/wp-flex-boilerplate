@@ -56,15 +56,6 @@ function hm_scripts() {
   }
 }
 
-// Remove Read More Jump
-add_filter('the_content_more_link', 'hm_remove_more_jump_link');
-function hm_remove_more_jump_link($link) {
-  $offset = strpos($link, '#more-');
-  if ($offset) $end = strpos($link, '"', $offset);
-  if ($end) $link = substr_replace($link, '', $offset, $end - $offset);
-  return $link;
-}
-
 // Changes the default WP login page logo
 add_action('login_enqueue_scripts', 'hm_login_logo');
 function hm_login_logo() {

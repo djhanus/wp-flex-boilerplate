@@ -52,7 +52,7 @@ function create_testimonials_posttype() {
     'exclude_from_search'   => false,
     'publicly_queryable'    => true,
     'capability_type'       => 'post',
-    'rewrite' 							=> false,
+    'rewrite' 							=> true,
     'with_front'            => false
   );
   register_post_type('testimonial', $testimonial);
