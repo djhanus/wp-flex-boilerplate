@@ -1,30 +1,29 @@
-@import "base/variables";
-
-// @import "eduardoboucas/include-media/dist/include-media";
-// @import "wordpress/wordpress-core.css/wordpress-core";
-
 @import "vendor/include-media/dist/include-media";
+// @import "vendor/slick/slick";
 
+@import "base/variables";
 @import "base/mixins";
-@import "base/legacy";
-@import "base/legacy_header";
 @import "base/base";
 @import "base/layout";
+@import "base/fonts";
 
 @import "components/footer";
-// @import "components/forms";
+@import "components/header";
+@import "components/gforms";
+@import "components/buttons";
 
-@import "components/flex/standard-text";
-@import "components/flex/info-block";
-@import "components/flex/multi-column";
-@import "components/flex/testimonial";
-@import "components/flex/resources";
-@import "components/flex/team-members";
-@import "components/flex/knowledgebase";
+// @import "components/flex/hero-banner";
+// @import "components/flex/text-wysiwyg";
+// @import "components/flex/featured-image";
+// @import "components/flex/feature-points";
+// @import "components/flex/info-tiles";
+// @import "components/flex/product-filter";
+// @import "components/flex/case-studies";
+// @import "components/flex/testimonials";
+// @import "components/flex/info-block";
+// @import "components/flex/form";
 
-@import "components/video-bg";
-
-@import "pages/homepage";
-@import "pages/default";
-@import "pages/single";
-@import "pages/blog";
+// @import "pages/home";
+// @import "pages/default";
+// @import "pages/single";
+// @import "pages/blog";

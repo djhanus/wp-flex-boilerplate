@@ -1,0 +1,121 @@
+body, p, ul, ol, section, div {
+  // font-family: $poppins;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+  &:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
+
+p {
+  font-size: 18px;
+  // font-family: $poppins;
+  // color: $colors--text-gray;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+  // -webkit-text-stroke: 0.25px $colors--text-gray;
+  @include media ('<desktop') {
+    font-size: 16px;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    // padding: 1.5rem 0;
+    margin: 0;
+    font-size: inherit;
+    letter-spacing: 0.75px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // font-family: $poppins;
+  // color: $black;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  color: #CCC;
+}
+
+h1 {
+  font-size: 2.333rem;
+  margin: 0rem auto;
+  line-height: 1.25;
+  // color: $colors--text-blue;
+  font-weight: 400;
+
+  @include media ('<desktop') {
+    font-size: 2.75rem;
+  }
+  @include media ('<tablet') {
+    font-size: 2.5rem;
+  }
+}
+h2 {
+  font-size: 1.777rem;
+  margin: 0.25rem auto 0.5rem;
+  // color: $colors--text-purple;
+
+  @include media ('<desktop') {
+    font-size: 2.25rem;
+  }
+  @include media ('<tablet') {
+    font-size: 2.0rem;
+  }
+}
+h3 {
+  font-size: 2.25rem;
+  margin: 1rem auto;
+  font-weight: normal;
+  @include media ('<desktop') {
+    font-size: 2.0rem;
+  }
+  @include media ('<tablet') {
+    font-size: 1.75rem;
+  }
+}
+h4 {
+  font-size: 2.0rem;
+  margin: 1rem auto;
+  font-weight: bold;
+  line-height: 1;
+  @include media ('<desktop') {
+    font-size: 1.75rem;
+  }
+  @include media ('<tablet') {
+    font-size: 1.5rem;
+  }
+}
+h5 {
+  font-size: 2.0rem;
+  margin: 1rem auto;
+  @include media ('<desktop') {
+    font-size: 1.75rem;
+  }
+  @include media ('<tablet') {
+    font-size: 1.5rem;
+  }
+}
+h6 {
+  font-size: 2.0rem;
+  margin: 1rem auto;
+  @include media ('<desktop') {
+    font-size: 1.75rem;
+  }
+  @include media ('<tablet') {
+    font-size: 1.5rem;
+  }
+}

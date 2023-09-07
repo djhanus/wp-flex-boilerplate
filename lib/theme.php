@@ -1,29 +1,8 @@
 <?php
-add_action('after_setup_theme', 'hm_setup');
-function hm_setup() {
-  // Clean up the head
-  remove_action('wp_head', 'rsd_link');
-  remove_action('wp_head', 'wlwmanifest_link');
-  remove_action('wp_head', 'wp_generator');
-  remove_action('wp_head', 'wp_shortlink_wp_head');
-
-  // Add RSS links to head
-  add_theme_support('automatic-feed-links');
-
+add_action('after_setup_theme', 'wp_setup');
+function wp_setup() {
   // Prevent File Modifications
   define('DISALLOW_FILE_EDIT', true);
-
-  // Enable Post Thumbnails
-  add_theme_support('post-thumbnails');
-
-  // Enable HTML5
-  add_theme_support('html5', array('search-form', 'gallery', 'caption'));
-
-  // Add custom image sizes
-  // add_image_size('card', 260, 390, true);
-  // add_image_size('tiny', 30, 30, true);
-  // add_image_size('wide_thumbnail', 300, 150, true);
-  // add_image_size('profile_pic', 300, 300, true);
 
   // Register navigation menus
   // register_nav_menu('header-navigation', 'Header Navigation');
@@ -33,7 +12,7 @@ function hm_setup() {
   // add_editor_style('editor-style.css');
 }
 
-// Don't update the theme
+// Don't update our custom theme
 add_filter('http_request_args', 'hm_dont_update_theme', 5, 2);
 function hm_dont_update_theme($r, $url) {
   if (strpos($url, 'http://api.wordpress.org/themes/update-check') !== 0) return $r;
