@@ -371,7 +371,9 @@ a:hover {
 }
 
 a.btn {
-  color: white;
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  color: #000000;
   padding: 0.5rem 3rem;
   border-radius: 25px;
   text-decoration: none;
@@ -384,6 +386,7 @@ a.btn {
   white-space: nowrap;
   -webkit-text-stroke: 0.25px white;
   cursor: pointer;
+  transition: all 250ms ease;
 }
 @media (max-width: 1023px) {
   a.btn {
@@ -392,31 +395,25 @@ a.btn {
   }
 }
 a.btn:hover {
-  background-color: white;
+  background-color: #000000;
+  color: #FFFFFF;
+  -webkit-text-stroke: 0.5px #000000;
 }
-a.btn.white:hover {
-  -webkit-text-stroke: 0.5px white;
-  color: white;
-}
-a.btn.white-blue-hover {
-  background-color: white;
-}
-a.btn.white-blue-hover:hover {
-  -webkit-text-stroke: 0.5px white;
-  color: white;
-}
-a.btn.purple {
-  color: white;
-  padding: 0.5rem 2rem;
-  text-transform: capitalize;
-}
-a.btn.purple:hover {
-  background-color: white;
-}
-
 .btn-holder {
   text-align: center;
-  margin: 5rem auto 1rem;
+  margin: 5rem auto 2rem;
+}
+
+section.flex--hero-banner .container .text-container {
+  border: 4px solid black;
+  max-width: 640px;
+}
+section.flex--hero-banner .container .text-container h1.hero {
+  font-size: 3.5rem;
+}
+section.flex--hero-banner .container .text-container p {
+  font-size: 2rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */

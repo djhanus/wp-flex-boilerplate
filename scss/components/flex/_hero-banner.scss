@@ -1,0 +1,19 @@
+section.flex--hero-banner {
+  .container {
+
+    .text-container {
+      border: 4px solid black;
+      max-width: 640px;
+
+      h1.hero {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 2.0rem;
+        font-style: italic;
+      }
+    }
+
+  }
+
+}
