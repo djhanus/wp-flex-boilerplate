@@ -6,7 +6,7 @@
     label {
       letter-spacing: 1px;
       color: white;
-      font-family: $poppins;
+      font-family: $font-body;
       font-weight: 400 !important;
       font-size: 20px !important;
       margin-left: 2.65rem;
@@ -41,7 +41,7 @@
   border: 2px solid white;
   letter-spacing: 1px;
   color: white;
-  font-family: $poppins;
+  font-family: $font-body;
   font-weight: 400 !important;
   font-size: 20px;
 }
@@ -49,7 +49,7 @@
 .gform_wrapper.gravity-theme .gfield textarea {
   letter-spacing: 1px;
   color: white !important;
-  font-family: $poppins;
+  font-family: $font-body;
   font-weight: 400 !important;
   font-size: 20px;
   padding: 1rem 2.5rem 0.75rem 2.5rem;
@@ -60,7 +60,7 @@
 .gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
   letter-spacing: 1px;
   color: white;
-  font-family: $poppins;
+  font-family: $font-body;
   font-weight: 400 !important;
   padding: 1rem 2.5rem 0.75rem 2.5rem;
   line-height: 1;
@@ -68,7 +68,7 @@
 
 #gform_wrapper_1 .gform_fields .gfield input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-family: $poppins;
+  font-family: $font-body;
   font-weight: 400 !important;
   letter-spacing: 1px;
   color: white;
@@ -96,7 +96,7 @@
     text-decoration: none;
     margin: 0 0.5rem;
     font-size: 20px;
-    font-family: $poppins;
+    font-family: $font-body;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1.5px;

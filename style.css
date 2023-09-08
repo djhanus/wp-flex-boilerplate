@@ -1,0 +1,422 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0 auto;
+  color: #695E4A;
+}
+
+.cf::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0 auto;
+  border: 1px dotted #333;
+}
+@media (max-width: 1023px) {
+  section {
+    padding: 1rem 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  position: relative;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+  border: 3px dotted #CCC;
+}
+
+body, p, ul, ol, section, div {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+}
+@media (max-width: 1023px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li, ol li {
+  margin: 0;
+  font-size: inherit;
+  letter-spacing: 0.75px;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  color: #CCC;
+}
+
+h1 {
+  font-size: 2.333rem;
+  margin: 0rem auto;
+  line-height: 1.25;
+  font-weight: 400;
+}
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.777rem;
+  margin: 0.25rem auto 0.5rem;
+}
+@media (max-width: 1023px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin: 1rem auto;
+  font-weight: normal;
+}
+@media (max-width: 1023px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 1rem auto;
+  font-weight: bold;
+  line-height: 1;
+}
+@media (max-width: 1023px) {
+  h4 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+@media (max-width: 1023px) {
+  h5 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+h6 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+@media (max-width: 1023px) {
+  h6 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 767px) {
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #22211D;
+  padding: 5rem 0;
+  min-height: 500px;
+  position: relative;
+  height: auto;
+}
+footer .container {
+  padding: 5px;
+  margin: 5px auto;
+  position: relative;
+}
+footer .copyright {
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+}
+footer .copyright p {
+  color: white;
+  opacity: 0.8;
+  font-size: 0.75rem;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1600px;
+}
+@media (max-width: 1023px) {
+  header .container {
+    max-width: 720px;
+  }
+}
+header .logo-container {
+  border: 2px dashed red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .logo-container img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+header .main-menu-container {
+  border: 2px dashed blue;
+  width: 100%;
+}
+header .main-menu-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+header .main-menu-container ul li {
+  margin: 0 1.5rem;
+}
+header .main-menu-container ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+header .main-menu-container ul li a.large {
+  color: white;
+  padding: 1.35rem 2.35rem;
+}
+header .main-menu-container ul li a.large:hover {
+  background-color: white;
+  transition: all 250ms ease;
+}
+
+.gform_body {
+  margin: 2.5rem auto;
+  max-width: 600px;
+}
+.gform_body .gfield label {
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  margin-left: 2.65rem;
+}
+.gform_body .gfield input {
+  color: white !important;
+  padding: 1.25rem 2rem;
+}
+.gform_body .gfield input[type=text], .gform_body .gfield input[type=tel],
+.gform_body .gfield input[type=email], .gform_body .gfield textarea {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white !important;
+}
+.gform_body .gfield legend {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid white;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px;
+}
+
+.gform_wrapper.gravity-theme .gfield textarea {
+  letter-spacing: 1px;
+  color: white !important;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px;
+  padding: 1rem 2.5rem 0.75rem 2.5rem;
+}
+
+.gform_wrapper.gravity-theme .gfield input.large, .gform_wrapper.gravity-theme .gfield select.large {
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400 !important;
+  padding: 1rem 2.5rem 0.75rem 2.5rem;
+  line-height: 1;
+}
+
+#gform_wrapper_1 .gform_fields .gfield input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+#gform_wrapper_1 .gform_fields .gfield input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+#gform_wrapper_1 .gform_fields .gfield input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+#gform_wrapper_1 .gform_fields .gfield input:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+.gform_footer input.button, .gform_footer input[type=submit], .gform_page_footer input.button, .gform_page_footer input[type=submit] {
+  background-color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 20px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+.gform_footer input.button:hover, .gform_footer input[type=submit]:hover, .gform_page_footer input.button:hover, .gform_page_footer input[type=submit]:hover {
+  -webkit-text-stroke: 0.5px white;
+  color: white;
+  border-color: white;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+
+a.btn {
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 20px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.25px white;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  a.btn {
+    padding: 0.5rem 2.5rem;
+    font-size: 18px;
+  }
+}
+a.btn:hover {
+  background-color: white;
+}
+a.btn.white:hover {
+  -webkit-text-stroke: 0.5px white;
+  color: white;
+}
+a.btn.white-blue-hover {
+  background-color: white;
+}
+a.btn.white-blue-hover:hover {
+  -webkit-text-stroke: 0.5px white;
+  color: white;
+}
+a.btn.purple {
+  color: white;
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+}
+a.btn.purple:hover {
+  background-color: white;
+}
+
+.btn-holder {
+  text-align: center;
+  margin: 5rem auto 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

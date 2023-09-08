@@ -1,7 +1,6 @@
 <?php
-$heading = arrval($args, 'heading', get_sub_field('heading'));
-$paragraph = arrval($args, 'paragraph', get_sub_field('paragraph'));
-$anchor = arrval($args, 'anchor_tag', get_sub_field('anchor_tag'));
+$heading = get_sub_field('heading');
+$paragraph = get_sub_field('paragraph');
 ?>
 
 <section class="flex--text-block" id="<?php echo $anchor; ?>">

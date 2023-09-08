@@ -1,5 +1,5 @@
 body, p, ul, ol, section, div {
-  // font-family: $poppins;
+  // font-family: $font-body;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -18,7 +18,7 @@ a {
 
 p {
   font-size: 18px;
-  // font-family: $poppins;
+  // font-family: $font-body;
   // color: $colors--text-gray;
   font-weight: 300;
   letter-spacing: 0.75px;
@@ -41,7 +41,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  // font-family: $poppins;
+  // font-family: $font-body;
   // color: $black;
 }
 
